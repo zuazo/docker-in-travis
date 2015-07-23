@@ -86,7 +86,7 @@ You can use a *.travis.yml* similar to the following:
 language: ruby
 
 before_script:
-- source <(curl -sL https://raw.githubusercontent.com/zuazo/docker-in-travis/master/scripts/start_docker.sh)
+- source <(curl -sL https://raw.githubusercontent.com/zuazo/docker-in-travis/0.1.0/scripts/start_docker.sh)
 
 script:
 - bundle exec rspec
