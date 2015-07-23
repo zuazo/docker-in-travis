@@ -2,8 +2,7 @@
 [![Docker Repository on Quay.io](https://quay.io/repository/zuazo/docker-in-travis/status "Docker Repository on Quay.io")](https://quay.io/repository/zuazo/tests-example)
 [![Build Status](http://img.shields.io/travis/zuazo/docker-in-travis.svg?style=flat)](https://travis-ci.org/zuazo/docker-in-travis)
 
---
-
+---
 # Docker Tests Example
 
 Docker image example using [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
