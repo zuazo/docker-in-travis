@@ -6,9 +6,9 @@ The tests are implemented in **Ruby**, using the [`docker-api`](https://github.c
 
 The following features are currently implemented:
 
-* [Test the built image](https://github.com/zuazo/docker-tests-example/tree/master/spec/build/dockerfile_spec.rb) using [`docker-api`](https://github.com/swipely/docker-api).
-* [Test the image running](https://github.com/zuazo/docker-tests-example/tree/master/spec/run/dockerfile_spec.rb) using [Serverspec](http://serverspec.org/).
-* Run the tests inside [Travis CI](https://travis-ci.org). See the [.travis.yml](https://github.com/zuazo/docker-tests-example/blob/master/.travis.yml) file.
+* [Test the built image](https://github.com/zuazo/docker-in-travis/tree/master/spec/build/dockerfile_spec.rb) using [`docker-api`](https://github.com/swipely/docker-api).
+* [Test the image running](https://github.com/zuazo/docker-in-travis/tree/master/spec/run/dockerfile_spec.rb) using [Serverspec](http://serverspec.org/).
+* Run the tests inside [Travis CI](https://travis-ci.org). See the [.travis.yml](https://github.com/zuazo/docker-in-travis/blob/master/.travis.yml) file.
 * Check the tests with [`should_not`](https://github.com/should-not/should_not) gem to avoid redundant test descriptions.
 * Run the tests in random order.
 
@@ -53,6 +53,8 @@ Finished in 1.26 seconds (files took 0.20144 seconds to load)
 Randomized with seed 52614
 ```
 
+See also the [Travis CI output](https://travis-ci.org/zuazo/docker-in-travis) as an example.
+
 ## Directory Structure
 
 ```
@@ -73,7 +75,7 @@ Randomized with seed 52614
 
 ## Questions and Improvements
 
-This is proof of concept used by myself in my projects. If you encounter any problems or have ideas for improvements, please [open an issue](https://github.com/zuazo/docker-tests-example/issues/new)!
+This is proof of concept used by myself in my projects. If you encounter any problems or have ideas for improvements, please [open an issue](https://github.com/zuazo/docker-in-travis/issues/new)!
 
 ## Acknowledgements
 
