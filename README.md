@@ -78,6 +78,22 @@ See also the [Travis CI output](https://travis-ci.org/zuazo/docker-in-travis) as
 └── webapp/: Example application to install.
 ```
 
+## How to Run Docker in Travis CI
+
+You can use a *.travis.yml* similar to the following:
+
+```yaml
+language: ruby
+
+before_script:
+- source <(curl -sL https://raw.githubusercontent.com/zuazo/docker-in-travis/master/scripts/start_docker.sh)
+
+script:
+- bundle exec rspec
+
+after_failure: cat docker_daemon.log
+```
+
 ## Questions and Improvements
 
 This is proof of concept used by myself in my projects. If you encounter any problems or have ideas for improvements, please [open an issue](https://github.com/zuazo/docker-in-travis/issues/new)!
@@ -88,6 +104,7 @@ This docker example does not contain anything new. It is based on multiple onlin
 
 * https://github.com/tcnksm-sample/test-driven-development-dockerfile
 * https://coderwall.com/p/5xylsg/tdd-for-dockerfile-by-rspec-severspec
+* https://github.com/voidlock/travis-docker
 * https://gist.github.com/masonforest/194e0cb6bb16c88e21a0
 * https://robots.thoughtbot.com/tdd-your-dockerfiles-with-rspec-and-serverspec
 * https://github.com/lukecyca/travis-docker-example
