@@ -1,4 +1,11 @@
-# Docker Tests Example [![Build Status](http://img.shields.io/travis/zuazo/docker-tests-example.svg?style=flat)](https://travis-ci.org/zuazo/docker-tests-example)
+[![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/zuazo/docker-in-travis)
+[![Docker Repository on Quay.io](https://quay.io/repository/zuazo/docker-in-travis/status "Docker Repository on Quay.io")](https://quay.io/r
+epository/zuazo/tests-example)
+[![Build Status](http://img.shields.io/travis/zuazo/docker-in-travis.svg?style=flat)](https://travis-ci.org/zuazo/docker-in-travis)
+
+--
+
+# Docker Tests Example
 
 Docker image example using [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
 
