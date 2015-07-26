@@ -98,7 +98,9 @@ after_failure: cat docker_daemon.log
 
 ## Change *Dockerfile* Location
 
-You can set the `DOCKERFILE_LOCATION` to change the *Dockerfile* subdirectory (defaults to `.`). For example, to run multiple tests:
+You can set the `DOCKERFILE_LOCATION` environment variable to change the *Dockerfile* subdirectory (defaults to `.`).
+
+For example, to run multiple tests:
 
 ```yaml
 language: ruby
