@@ -85,6 +85,8 @@ You can use a *.travis.yml* similar to the following:
 ```yaml
 language: ruby
 
+sudo: true
+
 before_script:
 - source <(curl -sL https://raw.githubusercontent.com/zuazo/docker-in-travis/0.1.0/scripts/start_docker.sh)
 
@@ -93,6 +95,32 @@ script:
 
 after_failure: cat docker_daemon.log
 ```
+
+## Change *Dockerfile* Location
+
+You can set the `DOCKERFILE_LOCATION` to change the *Dockerfile* subdirectory (defaults to `.`). For example, to run multiple tests:
+
+```yaml
+language: ruby
+
+sudo: true
+
+env:
+- DOCKERFILE_LOCATION=directory1
+- DOCKERFILE_LOCATION=directory2
+
+before_script:
+- source <(curl -sL https://raw.githubusercontent.com/zuazo/docker-in-travis/master/scripts/start_docker.sh)
+
+script:
+- bundle exec rspec
+
+after_failure: cat docker_daemon.log
+```
+
+## Real-world Examples
+
+* [chef-local](https://github.com/zuazo/chef-local-docker) image ([*.travis.yml*](https://github.com/zuazo/chef-local-docker/tree/master/.travis.yml), [*Rakefile*](https://github.com/zuazo/chef-local-docker/tree/master/Rakefile)), [*Gemfile*](https://github.com/zuazo/chef-local-docker/tree/master/Gemfile), [*spec/*](https://github.com/zuazo/chef-local-docker/tree/master/spec)): Runs a Travis CI build for each image tag.
 
 ## Questions and Improvements
 
