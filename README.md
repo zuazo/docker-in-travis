@@ -120,7 +120,7 @@ after_failure: cat docker_daemon.log
 
 ## Real-world Examples
 
-* [chef-local](https://github.com/zuazo/chef-local-docker) image ([*.travis.yml*](https://github.com/zuazo/chef-local-docker/tree/master/.travis.yml), [*Rakefile*](https://github.com/zuazo/chef-local-docker/tree/master/Rakefile)), [*Gemfile*](https://github.com/zuazo/chef-local-docker/tree/master/Gemfile), [*spec/*](https://github.com/zuazo/chef-local-docker/tree/master/spec)): Runs a Travis CI build for each image tag.
+* [chef-local](https://github.com/zuazo/chef-local-docker) image ([*.travis.yml*](https://github.com/zuazo/chef-local-docker/tree/master/.travis.yml), [*Rakefile*](https://github.com/zuazo/chef-local-docker/tree/master/Rakefile), [*Gemfile*](https://github.com/zuazo/chef-local-docker/tree/master/Gemfile), [*spec/*](https://github.com/zuazo/chef-local-docker/tree/master/spec)): Runs a Travis CI build for each image tag.
 
 ## Questions and Improvements
 
