@@ -1,5 +1,7 @@
 language: ruby
 
+sudo: true
+
 before_script:
 - source <(curl -sL https://raw.githubusercontent.com/zuazo/docker-in-travis/master/scripts/start_docker.sh)
 
