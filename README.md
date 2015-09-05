@@ -93,6 +93,24 @@ script:
 after_failure: cat docker_daemon.log
 ```
 
+### Using the Official Travis CI Docker Stacks
+
+[Since August 2015](http://blog.travis-ci.com/2015-08-19-using-docker-on-travis-ci/) you can try to use the official Docker service provided by Travis CI workers using the following *.travis.yml*:
+
+```yaml
+language: ruby
+
+sudo: required
+
+services:
+- docker
+
+script:
+- bundle exec rspec
+```
+
+Please, [let me know](https://github.com/zuazo/docker-in-travis/issues/new?title=Travis%20Docker%20worked%20for%20me) if this has worked for you.
+
 ## Change *Dockerfile* Location
 
 You can set the `DOCKERFILE_LOCATION` environment variable to change the *Dockerfile* subdirectory (defaults to `.`).
