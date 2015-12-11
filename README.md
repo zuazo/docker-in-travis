@@ -1,6 +1,11 @@
-[![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/zuazo/docker-in-travis) [![Docker Repository on Quay.io](https://quay.io/repository/zuazo/docker-in-travis/status "Docker Repository on Quay.io")](https://quay.io/repository/zuazo/tests-example) [![Build Status](http://img.shields.io/travis/zuazo/docker-in-travis.svg?style=flat)](https://travis-ci.org/zuazo/docker-in-travis)
+# Important Note
+
+The procedure described below is considered outdated. From now on, I recommend using the [`dockerspec`](https://github.com/zuazo/dockerspec) gem for testing docker images.
+
 ---
+
 # Docker Tests Example
+[![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/zuazo/docker-in-travis) [![Docker Repository on Quay.io](https://quay.io/repository/zuazo/docker-in-travis/status "Docker Repository on Quay.io")](https://quay.io/repository/zuazo/tests-example) [![Build Status](http://img.shields.io/travis/zuazo/docker-in-travis.svg?style=flat)](https://travis-ci.org/zuazo/docker-in-travis)
 
 Docker image example using [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
 
@@ -137,7 +142,7 @@ after_failure: cat docker_daemon.log
 
 ## Real-world Examples
 
-* [chef-local](https://github.com/zuazo/chef-local-docker) image ([*.travis.yml*](https://github.com/zuazo/chef-local-docker/tree/master/.travis.yml), [*spec/*](https://github.com/zuazo/chef-local-docker/tree/master/spec), [*Gemfile*](https://github.com/zuazo/chef-local-docker/tree/master/Gemfile)): Runs a Travis CI build for each image tag.
+* [chef-local](https://github.com/zuazo/chef-local-docker) image ([*.travis.yml*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/.travis.yml), [*spec/*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/spec), [*Gemfile*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/Gemfile)): Runs a Travis CI build for each image tag.
 
 * [keywhiz](https://github.com/zuazo/keywhiz-docker) image ([*.travis.yml*](https://github.com/zuazo/keywhiz-docker/tree/master/.travis.yml), [*spec/*](https://github.com/zuazo/keywhiz-docker/tree/master/spec), [*Gemfile*](https://github.com/zuazo/keywhiz-docker/tree/master/Gemfile)): Runs one Travis CI build.
 
