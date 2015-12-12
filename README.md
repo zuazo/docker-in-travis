@@ -142,9 +142,9 @@ after_failure: cat docker_daemon.log
 
 ## Real-world Examples
 
-* [chef-local](https://github.com/zuazo/chef-local-docker) image ([*.travis.yml*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/.travis.yml), [*spec/*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/spec), [*Gemfile*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/Gemfile)): Runs a Travis CI build for each image tag.
+* [chef-local](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7) image ([*.travis.yml*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/.travis.yml), [*spec/*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/spec), [*Gemfile*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/Gemfile)): Runs a Travis CI build for each image tag.
 
-* [keywhiz](https://github.com/zuazo/keywhiz-docker) image ([*.travis.yml*](https://github.com/zuazo/keywhiz-docker/tree/master/.travis.yml), [*spec/*](https://github.com/zuazo/keywhiz-docker/tree/master/spec), [*Gemfile*](https://github.com/zuazo/keywhiz-docker/tree/master/Gemfile)): Runs one Travis CI build.
+* [keywhiz](https://github.com/zuazo/keywhiz-docker/tree/a15def5e83de765e6881bd4305f06fc0a9d4f9c1) image ([*.travis.yml*](https://github.com/zuazo/keywhiz-docker/tree/a15def5e83de765e6881bd4305f06fc0a9d4f9c1/.travis.yml), [*spec/*](https://github.com/zuazo/keywhiz-docker/tree/a15def5e83de765e6881bd4305f06fc0a9d4f9c1/spec), [*Gemfile*](https://github.com/zuazo/keywhiz-docker/tree/a15def5e83de765e6881bd4305f06fc0a9d4f9c1/Gemfile)): Runs one Travis CI build.
 
 ## Questions and Improvements
 
