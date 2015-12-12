@@ -1,10 +1,10 @@
-## Important Note
+### Important Note
 
 The procedure described below is considered outdated. From now on, I recommend using the [`dockerspec`](https://github.com/zuazo/dockerspec) gem for testing docker images.
 
 ---
 
-## Docker Tests Example
+### Docker Tests Example
 [![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/zuazo/docker-in-travis) [![Docker Repository on Quay.io](https://quay.io/repository/zuazo/docker-in-travis/status "Docker Repository on Quay.io")](https://quay.io/repository/zuazo/tests-example) [![Build Status](http://img.shields.io/travis/zuazo/docker-in-travis.svg?style=flat)](https://travis-ci.org/zuazo/docker-in-travis)
 
 Docker image example using [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
@@ -21,7 +21,7 @@ The following features are currently implemented:
 
 **Note:** This example installs a simple Apache & PHP application, but could be anything else.
 
-### Run the Tests
+#### Run the Tests
 
 You can use the [`bundler`](http://bundler.io/) Ruby gem to install all the requirements to run the tests:
 
@@ -62,7 +62,7 @@ Randomized with seed 52614
 
 See also the [Travis CI output](https://travis-ci.org/zuazo/docker-in-travis) as an example.
 
-### Directory Structure
+#### Directory Structure
 
 ```
 ├── Dockerfile
@@ -80,7 +80,7 @@ See also the [Travis CI output](https://travis-ci.org/zuazo/docker-in-travis) as
 └── webapp/: Example application to install.
 ```
 
-### How to Run Docker in Travis CI
+#### How to Run Docker in Travis CI
 
 You can use a *.travis.yml* similar to the following:
 
@@ -98,7 +98,7 @@ script:
 after_failure: cat docker_daemon.log
 ```
 
-#### Using the Official Travis CI Docker Stacks
+##### Using the Official Travis CI Docker Stacks
 
 [Since August 2015](http://blog.travis-ci.com/2015-08-19-using-docker-on-travis-ci/) you can try to use the official Docker service provided by Travis CI workers using the following *.travis.yml*:
 
@@ -116,7 +116,7 @@ script:
 
 Please, [let me know](https://github.com/zuazo/docker-in-travis/issues/new?title=Travis%20Docker%20worked%20for%20me) if this has worked for you.
 
-### Change *Dockerfile* Location
+#### Change *Dockerfile* Location
 
 You can set the `DOCKERFILE_LOCATION` environment variable to change the *Dockerfile* subdirectory (defaults to `.`).
 
@@ -140,17 +140,17 @@ script:
 after_failure: cat docker_daemon.log
 ```
 
-### Real-world Examples
+#### Real-world Examples
 
 * [chef-local](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7) image ([*.travis.yml*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/.travis.yml), [*spec/*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/spec), [*Gemfile*](https://github.com/zuazo/chef-local-docker/tree/ff79f619f76a5a50052db76132ea16b39915caa7/Gemfile)): Runs a Travis CI build for each image tag.
 
 * [keywhiz](https://github.com/zuazo/keywhiz-docker/tree/a15def5e83de765e6881bd4305f06fc0a9d4f9c1) image ([*.travis.yml*](https://github.com/zuazo/keywhiz-docker/tree/a15def5e83de765e6881bd4305f06fc0a9d4f9c1/.travis.yml), [*spec/*](https://github.com/zuazo/keywhiz-docker/tree/a15def5e83de765e6881bd4305f06fc0a9d4f9c1/spec), [*Gemfile*](https://github.com/zuazo/keywhiz-docker/tree/a15def5e83de765e6881bd4305f06fc0a9d4f9c1/Gemfile)): Runs one Travis CI build.
 
-### Questions and Improvements
+#### Questions and Improvements
 
 This is proof of concept used by myself in my projects. If you encounter any problems or have ideas for improvements, please [open an issue](https://github.com/zuazo/docker-in-travis/issues/new)!
 
-### Acknowledgements
+#### Acknowledgements
 
 This docker example does not contain anything new. It is based on multiple online sources. Mainly the following:
 
